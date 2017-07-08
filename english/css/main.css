@@ -1,5 +1,5 @@
 
-/* 
+/*
  *  Some useful numbers...
  *
  *  When font-size is 1em/12pt/16px/100%:
@@ -114,8 +114,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: url('../img/web-background.jpg');
-    background-attachment: fixed;
+    /*background: url('../img/web-background.jpg');
+    background-attachment: fixed;*/
 }
 @media print {
     body {
@@ -218,17 +218,16 @@ td, th {
 }
 
 .page {
-    margin: 1em auto;
+    /*margin: 1em auto;*/
     padding: 0;
     border: 1px solid #222; /* Safely using px because exists outside layout of page content */
     box-shadow: #222 0.0em 0em 0.6em;
     clear: both;
     background-color: #FFF;
     background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 100%;
-    width: 51em; /* = 8.5in at 12pt (1em) */
-    min-height: 66em; /* = 11in at 12pt (1em) */
+    background-size: cover;
+    width: 21cm;
+    height: 29.7cm;
 }
 @media print {
     .page {
@@ -238,8 +237,8 @@ td, th {
         max-width: none;
         min-height: initial;
 
-        width: 51em; /* = 8.5in at 12pt (1em) */
-        height: 66em; /* = 11in at 12pt (1em) */
+        width: 21cm;
+        height: 29.7cm;
         page-break-before: always;
     }
 }
@@ -286,7 +285,7 @@ td, th {
 .page-header {
     display: block;
     position: relative;
-    height: 0;
+    height: 17px;
     top: 1.5em; /* = 0.25in at 12pt (1em) */
     margin: 0 5.88%; /* = ~0.5in at 12pt (1em) */
 }
@@ -295,13 +294,13 @@ td, th {
 }*/
 .page-header-section-title {
     position: relative;
-    height: 0;
+    height: 17px;
     top: 0;
     float: right;
 }
 .page-header-doc-title {
     position: relative;
-    height: 0;
+    height: 17px;
     top: 0;
 }
 
@@ -450,14 +449,14 @@ td, th {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-		
-}            
+
+}
 
 .whos-on-first-look-at-display  {
 	background-color: black;
 	color: white;
 }
-                            
+
 .whos-on-first-step1-table td table td
 {
 	font-size: 1em;
@@ -555,6 +554,7 @@ td, th {
 #venndiagram {
 	display: block;
 	width: 70%;
+	height: 360px;
     position:relative;
     top: -2em;
 	margin-bottom: 0;
@@ -620,8 +620,7 @@ td, th {
     display: inline-table;
     margin-top: 1em;
     margin-bottom: 1em;
-    width: 15.3em;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .wire-sequence td, .wire-sequence th {
@@ -876,7 +875,7 @@ td, th {
     img {
         max-width: 100% !important;
     }
-    
+
     @page {
         margin: 0;
     }
